@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шахабиддин — Портфолио</title>
+  <meta name="description" content="Шахабиддиндин жеке портфолио сайты: долбоорлор жана байланыш.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo">Шахабиддин</a>
+      <button class="burger" id="burger" aria-label="Менюну ачуу">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#about">Мен жөнүндө</a>
+        <a href="#projects">Долбоорлор</a>
+        <a href="#contact">Байланыш</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Саламатсызбы 👋</p>
+          <h1>Мен <span>Шахабиддин</span></h1>
+          <p class="lead">Бизнес жана долбоорлор менен иштейм. Төмөндө менин жасаган иштерим менен таанышсаңыз болот.</p>
+          <div class="actions">
+            <a href="#projects" class="btn">Долбоорлорду көрүү</a>
+            <a href="#contact" class="btn btn-outline">Байланышуу</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/images/ustaz.jpeg" alt="Шахабиддин" onerror="this.parentElement.classList.add('no-img')">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Мен жөнүндө</h2>
+        <p class="about-text">Бул жерге өзүңүз жөнүндө кыскача жазасыз: ким экениңиз, кайсы иш менен алектенесиз, кандай тажрыйбаңыз бар.</p>
+        <div class="stats">
+          <div class="stat"><strong data-count="4">0</strong><span>Долбоор</span></div>
+          <div class="stat"><strong data-count="3">0</strong><span>Жыл тажрыйба</span></div>
+          <div class="stat"><strong data-count="100">0</strong><span>% аракет</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Долбоорлор</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="thumb"><img src="assets/images/choco-fontan.jpeg" alt="Choco Fontan" onerror="this.remove()"></div>
+            <div class="card-body">
+              <h3>Choco Fontan</h3>
+              <p>Долбоордун сүрөттөмөсү бул жерге жазылат.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img src="assets/images/abulayt.jpeg" alt="Abulayt" onerror="this.remove()"></div>
+            <div class="card-body">
+              <h3>Abulayt</h3>
+              <p>Долбоордун сүрөттөмөсү бул жерге жазылат.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img src="assets/images/great-trade-company.png" alt="Great Trade Company" onerror="this.remove()"></div>
+            <div class="card-body">
+              <h3>Great Trade Company</h3>
+              <p>Долбоордун сүрөттөмөсү бул жерге жазылат.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2>Байланыш</h2>
+        <p class="about-text">Суроо же сунуш болсо, жазыңыз.</p>
+        <form class="form" id="form">
+          <input type="text" name="name" placeholder="Атыңыз" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" rows="5" placeholder="Билдирүүңүз" required></textarea>
+          <button type="submit" class="btn">Жөнөтүү</button>
+          <p class="form-note" id="formNote" hidden>Рахмат! Билдирүүңүз кабыл алынды.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Шахабиддин. Бардык укуктар корголгон.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
